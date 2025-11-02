@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Prapti Ghimire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">PG</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p class="section-description">Explore my portfolio of projects showcasing my skills in web development, data analysis, and software engineering.</p>
+
+            <div id="filter-buttons">
+                <button class="filter-btn active" data-language="all">All</button>
+                <button class="filter-btn" data-language="Python">Python</button>
+                <button class="filter-btn" data-language="JavaScript">JavaScript</button>
+                <button class="filter-btn" data-language="HTML">HTML</button>
+                <button class="filter-btn" data-language="CSS">CSS</button>
+            </div>
+
+            <div id="project-grid"></div>
+        </div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p><strong>Language:</strong> <span id="modal-language"></span></p>
+            <p><strong>Stars:</strong> <span id="modal-stars"></span></p>
+            <p><strong>Forks:</strong> <span id="modal-forks"></span></p>
+            <a id="modal-link" href="#" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Prapti Ghimire</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> praptighimire777@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +977 9741803944</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://github.com/praptighimire" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prapti-ghimire-a94531243/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/prapti_ghimire/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/9779741803944" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
